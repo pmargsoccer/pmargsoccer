@@ -189,3 +189,12 @@ blockquote { margin: .8em 0; padding: .6em 1em; border-left: 4px solid var(--yel
   .ex .q { font-size: 1.1rem; }
   .flash .front { font-size: 1.5rem; }
 }
+
+/* sound board (tappable vowels) */
+.sound-board { display: grid; grid-template-columns: repeat(auto-fill, minmax(105px, 1fr)); gap: .5em; margin: .5em 0 1.2em; }
+.stile { border: 1px solid var(--line); border-radius: 12px; padding: .5em; text-align: center; display: grid; gap: .2em; background: var(--bg); }
+.stile .sv { font-size: 2rem; font-weight: 800; color: var(--green); background: var(--card); padding: .15em 0; border-radius: 10px; }
+.stile .sv:active, .stile .sw:active { transform: scale(.96); }
+.stile .sl { font-size: .78rem; color: var(--mute); line-height: 1.2; }
+.stile .sw { font-size: .9rem; padding: .3em .4em; }
+.stile small { color: var(--mute); font-size: .75rem; }

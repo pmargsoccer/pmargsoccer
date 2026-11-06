@@ -7,6 +7,16 @@
       .map((r) => `<tr>${r.map((c) => `<td>${c}</td>`).join('')}</tr>`)
       .join('')}</tbody></table>`;
 
+  // Tappable sound tiles: [letter, sound-to-speak, label, example word, example meaning]
+  PT.soundBoard = (title, tiles) =>
+    `<h3>${title}</h3><div class="sound-board">${tiles
+      .map(([v, sound, label, word, mean]) => `<div class="stile">
+        <button class="sv" data-say="${sound}" data-slow="1" title="Play the sound">${v}</button>
+        <span class="sl">${label}</span>
+        <button class="sw" data-say="${word}" title="Play the word">🔊 ${word}</button>
+        <small>${mean}</small></div>`)
+      .join('')}</div>`;
+
   /* ---------------- utilities ---------------- */
   const U = (PT.u = {});
   U.esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));

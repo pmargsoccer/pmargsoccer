@@ -15,6 +15,32 @@ PT.addWeek({
       id: 'w1l1', kind: 'Pronunciation', title: 'The sounds of Brazil', minutes: 30,
       body: `
 <p>Portuguese spelling is very regular once you know about 12 rules. Learn the sounds first, so that every word you pick up later sounds right in your head. Press 🔊 on every example and copy it out loud.</p>
+<p class="tip">👆 <b>Tap the big letter</b> to hear the sound slowly on its own. <b>Tap the word</b> to hear it inside a real word. Repeat each one out loud 3 times.</p>
+${PT.soundBoard('The 7 vowel sounds', [
+  ['a', 'á', 'like "ah" in father', 'casa', 'house'],
+  ['é', 'é', 'open "eh" as in bed', 'café', 'coffee'],
+  ['ê', 'ê', 'closed "ay" (no glide)', 'você', 'you'],
+  ['i', 'i', '"ee" as in see', 'vida', 'life'],
+  ['ó', 'ó', 'open "aw" as in law', 'avó', 'grandma'],
+  ['ô', 'ô', 'closed "oh" (no glide)', 'avô', 'grandpa'],
+  ['u', 'u', '"oo" as in food', 'tudo', 'everything'],
+])}
+${PT.soundBoard('Unstressed endings', [
+  ['-e', 'leite', 'final e → "ee"', 'leite', 'milk'],
+  ['-o', 'carro', 'final o → "oo"', 'obrigado', 'thank you'],
+  ['-a', 'casa', 'final a → soft "uh"', 'praia', 'beach'],
+])}
+${PT.soundBoard('Nasal vowels (air through the nose)', [
+  ['ã', 'lã', 'nasal "ah"', 'maçã', 'apple'],
+  ['ão', 'não', 'nasal "ow"', 'pão', 'bread'],
+  ['ãe', 'mãe', 'nasal "ah-ee"', 'mãe', 'mother'],
+  ['õe', 'põe', 'nasal "oy"', 'limões', 'lemons'],
+  ['em', 'bem', 'nasal "ay"', 'também', 'also'],
+  ['im', 'sim', 'nasal "ee"', 'sim', 'yes'],
+  ['om', 'som', 'nasal "oh"', 'bom', 'good'],
+  ['um', 'um', 'nasal "oo"', 'algum', 'some'],
+])}
+<h3>Consonant rules</h3>
 ${PT.table(['Spelling', 'Sounds like', 'Examples'], [
   ['final <b>-e</b>', '"ee"', 'leite (LAY-chee), sete, noite'],
   ['final <b>-o</b>', '"oo"', 'obrigad<b>o</b> (o-bree-GA-doo), carro'],
